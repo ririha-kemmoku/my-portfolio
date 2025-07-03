@@ -46,6 +46,8 @@ header{
 footer{
   width: 100%;
   padding: 20px 0;
+  position: relative;
+  z-index: 1;
 }
 
 .header-right,
@@ -63,7 +65,7 @@ footer{
 .logo{
   width: 216px;
 }
-.inpuiry{
+.inquiry{
   border: none;
   background-color: #FE9078;
   color: #fff;
@@ -127,6 +129,8 @@ footer{
   color: #fff;
   font-weight: 400;
   font-size: 32px;
+  display: flex;
+  flex-wrap: nowrap;
 }
 .detail{
   font-size: 18px;
@@ -280,6 +284,12 @@ textarea{
 .menu{
   display: none;
 }
+.btn.active{
+  display: block;
+}
+  .menu.active {
+    display: block;
+  }
 .btn{
   position: fixed; 
   top: 0;
