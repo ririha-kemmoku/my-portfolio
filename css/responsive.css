@@ -1,0 +1,101 @@
+/* スマホ用のスタイル */
+@media screen and (max-width: 768px) {
+header{
+    padding: none;
+}
+.header-right{
+    display: none;
+}
+.logo{
+  width: 120px;
+  object-fit: contain;
+}
+.btn,
+.menu{
+  display: block;
+}
+.top-txt{
+  top: 45%;
+  font-size: 30px;
+}
+.title{
+  font-size: 30px;
+}
+.skill-title{
+  font-size: 26px;
+  text-align: center;
+}
+.skill-flex{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+}
+.skill-icon{
+  justify-content: center;
+}
+.skill-icon img {
+  height: 100px;
+  width: 100px;
+  object-fit: contain;
+}
+.skill-txt,
+.policy-txt,
+.point-txt,
+.hobby-txt{
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 2;
+}
+.about-wrapper{
+  flex-direction: column;
+  align-items: center;
+}
+.profile-icon{
+  padding-left: 0px;
+}
+.about-right{
+  text-align: center;
+  margin-right: 0px;
+}
+.name{
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+.sub-name{
+  font-size: 20px;
+  line-height: 5px;
+  margin-top: 0;
+}
+.about-born{
+  font-size: 18px;
+  padding-top: 25px;
+}
+.about-txt{
+  font-size: 15px;
+  line-height: 2;
+  margin: 0 50px;
+}
+.sns-icon{
+  justify-content: center;
+}
+.sns-icon img{
+  width: 50px;
+}
+.about-view-more{
+    text-align: center;
+}
+.sent{
+  height: 60px;
+  width: 230px;
+  font-size: 20px;
+}
+}
+
+
+
+
+/* タブレット（769px〜1024px） */
+@media screen and (max-width: 1024px) {
+
+}
