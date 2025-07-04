@@ -5,12 +5,8 @@
   padding: 0 20px;
 }
 
-.header-right a,
-.footer-right a{
-  width: 60px;
-
-}
-.header-right{
+.header-right,
+.footer-right{
     display: none;
 }
 .btn,
@@ -124,16 +120,6 @@ form{
   display: flex;
   flex-direction: column;
   padding: 100px 50px;
-}
-.footer-right a{
-  font-size: 10px;
-}
-.footer-right{
-  display: flex;
-  gap: 15px;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 .copyright{
   font-size: 10px;
