@@ -1,46 +1,62 @@
 /* スマホ用のスタイル */
-@media screen and (max-width: 768px) {
-header{
-    padding: none;
-}
+@media screen and (max-width: 480px) {
 .header-inner,
 .footer-inner{
   padding: 0 20px;
 }
+
+.header-right a,
+.footer-right a{
+  width: 60px;
+
+}
 .header-right{
     display: none;
-}
-.logo{
-  width: 120px;
-  object-fit: contain;
 }
 .btn,
 .menu{
   display: block;
 }
 .top-txt{
-  top: 45%;
-  font-size: 30px;
+  font-size: 20px;
+  line-height: 3px;
 }
 .title{
-  font-size: 30px;
+  font-size: 24px;
 }
 .work-item{
-  padding: 100px 50px;
+  padding: 30px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 50px;
 }
-.work-img{
-  width: 200px;
-  object-fit: contain;
+.work-title{
+  font-weight: 300;
+  font-size: 15px;
+}
+.detail{
+  font-size: 10px;
+}
+.view-more,
+.back-site{
+  padding: 10px 20px;
+  font-size: 10px;
+}
+.skill-wrapper,
+.policy-wrapper{
+  padding: 50px ;
 }
 .skill-title{
-  font-size: 26px;
-  text-align: center;
+  font-size: 18px;
+  margin-left: 0;
+  padding-bottom: 30px;
+    text-align: center;
 }
 .skill-flex{
   display: flex;
   flex-direction: column;
-  gap: 50px;
   align-items: center;
+  gap: 20px;
 }
 .skill-icon{
   justify-content: center;
@@ -64,16 +80,16 @@ header{
 }
 .profile-icon{
   padding-left: 0px;
+  margin: 0px;
 }
 .profile-icon img{
-  width: 200px;
+  width: 150px;
   object-fit: contain;
 }
 .about-right{
   text-align: center;
   margin-right: 0px;
 }
-
 .name{
   font-size: 26px;
   margin-bottom: 20px;
@@ -95,23 +111,129 @@ header{
 .sns-icon{
   justify-content: center;
 }
-.work-item{
-  padding: 100px 90px;
-  display: flex;
+.about-born{
+  font-size: 15px;
 }
-.work-title{
-  color: #fff;
-  font-weight: 300;
+.sns-icon img{
+  width: 50px;
+}
+.about-view-more{
+    text-align: center;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  padding: 100px 50px;
+}
+.footer-right a{
+  font-size: 10px;
+}
+.footer-right{
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.copyright{
+  font-size: 10px;
+  padding: 20px;
+}
+/*プロフィールHTML*/
+.profile-about-wrapper{
+  display: flex;
+  flex-direction: column;
+  margin-top: 90px;
+  align-items:center ;
+}
+.slogan{
   font-size: 24px;
 }
+.policy-flex{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 10px;
+}
+.point{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  justify-content: flex-start;
+}
+.point-txt{
+  padding: 0px 0px 20px 0px ;
+}
+.policy-icon {
+  text-align: center;
+}
+.policy-icon img{
+  width: 50%;
+}
+.point-title {
+  font-size: 20px;
+}
+.hobby-txt{
+  margin-left: 0px;
+}
+.hobby-wrapper{
+  padding: 30px 10px;
+}
+.hobby-flex{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  align-items: center;
+}
+.hobby-flex2{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.photo-image{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+}
+
+
+
+/* タブレット（769px〜1024px） */
+@media screen and (max-width: 1024px) and (min-width: 481px){
+.header-inner,
+.footer-inner{
+  padding: 10px 20px;
+}
+
+.top-txt{
+  font-size: 40px;
+  line-height: 10px;
+}
+.title{
+  font-size: 30px;
+}
+.work-item{
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 50px; 
+}
+.work-title{
+  font-weight: 300;
+  font-size: 25px;
+}
 .detail{
-  font-size: 10px;
+  font-size: 15px;
 }
 .view-more,
 .back-site{
-  border-radius: 50px;
-  padding: 15px 30px;
+  padding: 13px 25px;
   font-size: 15px;
+}
+.work-img{
+  width: 300px;
+  object-fit: contain;
 }
 .skill-wrapper,
 .policy-wrapper{
@@ -120,6 +242,67 @@ header{
 .skill-title{
   font-size: 30px;
   margin-left: 0;
+  padding-bottom: 25px;
+  text-align: center;
+}
+.skill-flex{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.skill-icon{
+  justify-content: center;
+}
+.skill-icon img {
+  height: 100px;
+  width: 100px;
+  object-fit: contain;
+}
+.skill-txt,
+.policy-txt,
+.point-txt,
+.hobby-txt{
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 2;
+}
+.about-wrapper{
+  flex-direction: column;
+  align-items: center;
+}
+.profile-icon{
+  padding-left: 0px;
+  margin: 0px;
+}
+.profile-icon img{
+  width: 200px;
+  object-fit: contain;
+}
+.about-right{
+  text-align: center;
+  margin-right: 0px;
+}
+.name{
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+.sub-name{
+  font-size: 20px;
+  line-height: 5px;
+  margin-top: 0;
+}
+.about-born{
+  font-size: 18px;
+  padding-top: 25px;
+}
+.about-txt{
+  font-size: 15px;
+  line-height: 2;
+  margin: 0 50px;
+}
+.sns-icon{
+  justify-content: center;
 }
 .about-born{
   font-size: 15px;
@@ -136,31 +319,61 @@ form{
   padding: 100px 50px;
 }
 .sent{
-  height: 60px;
-  width: 230px;
-  font-size: 20px;
+  height: 50px;
+  width: 180px;
+  font-size: 18px;
 }
 /*プロフィールHTML*/
 .profile-about-wrapper{
   display: flex;
   flex-direction: column;
   margin-top: 90px;
+  align-items:center ;
 }
 .slogan{
   font-size: 24px;
 }
 .policy-flex{
-  gap: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 10px;
 }
 .point{
-  padding: 0 50px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  justify-content: flex-start;
 }
+.point-txt{
+  padding: 0px 0px 20px 0px ;
 }
-
-
-
-
-/* タブレット（769px〜1024px） */
-@media screen and (max-width: 1024px) {
-
+.policy-icon {
+  text-align: center;
+}
+.policy-icon img{
+  width: 50%;
+}
+.point-title {
+  font-size: 20px;
+}
+.hobby-flex2{
+  width: 100%;
+}
+.hobby-flex{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  align-items: flex-start;
+}
+.photo-image{
+  overflow-x: auto;
+  width: 100%;
+}
+.photo-image img{
+  min-width: 200px;
+}
+.copyright{
+  padding:0px 20px;
+}
 }
