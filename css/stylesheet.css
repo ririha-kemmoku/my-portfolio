@@ -55,6 +55,7 @@ footer{
 .header-right,
 .footer-right{
   display: flex;
+  flex-wrap: nowrap;
   gap: 30px;
   align-items: center;
   height: 90px;
@@ -119,7 +120,7 @@ footer{
   border-top-right-radius: 50px;
 }
 .work-item{
-  padding: 120px 180px;
+  padding: 100px 180px;
   display: flex;
   justify-content: space-between;
 }
@@ -486,4 +487,9 @@ hr{
   font-size: 18px;
   line-height: 2.15;
   padding: 50px 90px;
+}
+/*バナー詳細HTML*/
+.feature-flex{
+  display: flex;
+
 }

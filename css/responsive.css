@@ -7,7 +7,7 @@
 
 .header-right,
 .footer-right{
-    display: none;
+  display: none;
 }
 .btn,
 .menu{
@@ -24,7 +24,7 @@
   padding: 30px;
   display: flex;
   justify-content: flex-start;
-  gap: 50px;
+  gap: 10px;
 }
 .work-title{
   font-weight: 300;
@@ -36,7 +36,7 @@
 .view-more,
 .back-site{
   padding: 10px 20px;
-  font-size: 10px;
+  font-size: 15px;
 }
 .skill-wrapper,
 .policy-wrapper{
@@ -125,6 +125,10 @@ form{
   font-size: 10px;
   padding: 20px;
 }
+.sent{
+  height: auto;
+  font-size: 15px;
+}
 /*プロフィールHTML*/
 .profile-about-wrapper{
   display: flex;
@@ -191,6 +195,11 @@ form{
 .footer-inner{
   padding: 10px 20px;
 }
+  .header-right a,
+  .footer-inner a{
+    font-size: 14px; 
+    white-space: nowrap; 
+  }
 
 .top-txt{
   font-size: 40px;
@@ -214,8 +223,8 @@ form{
 }
 .view-more,
 .back-site{
-  padding: 13px 25px;
-  font-size: 15px;
+  padding: 13px 40px;
+  font-size: 18px;
 }
 .work-img{
   width: 300px;
