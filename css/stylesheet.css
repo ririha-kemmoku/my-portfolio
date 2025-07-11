@@ -56,9 +56,14 @@ footer{
 .footer-right{
   display: flex;
   flex-wrap: nowrap;
+  white-space: nowrap;
   gap: 30px;
   align-items: center;
   height: 90px;
+}
+.footer-right a {
+  display: inline-block;
+  white-space: nowrap;
 }
 .copyright{
   display: flex;
@@ -69,6 +74,7 @@ footer{
   width: 30%;
 }
 .inquiry{
+  display: inline-block;
   border: none;
   background-color: #FE9078;
   color: #fff;
@@ -108,7 +114,6 @@ footer{
   line-height: 9px;
   text-align: center;
 }
-
 .work-wrapper{
   display: flex;
   flex-direction: column;
@@ -123,6 +128,8 @@ footer{
   padding: 100px 180px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  gap: 60px;
 }
 .work-item.reverse{
   flex-direction: row-reverse;
@@ -137,19 +144,32 @@ footer{
 .detail{
   font-size: 18px;
 }
-.work-1 .work-txt,
-.work-3 .work-txt {
+.work-txt {
   display: flex;
   flex-direction: column;
+  width: 40%;
+}
+.work-txt p {
+  max-width: 100%;
+  line-height: 1.8PX;
+}
+.work-1 .work-txt,
+.work-3 .work-txt,
+.work-5 .work-txt {
   align-items: flex-end;
   text-align: right;
+}
+.work-2 .work-txt,
+.work-4 .work-txt {
+  align-items: flex-start;
+  text-align: LEFT;
 }
 .work-txt a{
   display: inline-block;
   margin-top: 20px;
 }
 .work-img{
-  width: 50%;
+  width: 55%;
   object-fit: contain;
 }
 
@@ -452,6 +472,7 @@ textarea{
   width: fit-content; 
   margin: 50px auto; 
   text-align: center;
+  height: auto;
 }
 /*ワークHTML*/
 .low-title{
@@ -491,5 +512,13 @@ hr{
 /*バナー詳細HTML*/
 .feature-flex{
   display: flex;
-
+}
+.banner-img{
+  width: 50%;
+  object-fit: contain;
+}
+.banner-flex{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
