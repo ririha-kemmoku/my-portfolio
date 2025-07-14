@@ -19,12 +19,17 @@
 }
 .title{
   font-size: 24px;
+  padding: 30px 0 15px 0 ;
 }
 .work-item{
+  align-items: center;
   padding: 30px;
-  display: flex;
-  justify-content: flex-start;
   gap: 10px;
+}
+.work-txt{
+  width: 100%;
+  text-align: center;
+  align-items: center;
 }
 .work-title{
   font-weight: 300;
@@ -35,6 +40,8 @@
 }
 .view-more,
 .back-site{
+  min-width: auto;
+  width: 50%;
   padding: 10px 20px;
   font-size: 15px;
 }
@@ -180,11 +187,10 @@ form{
   width: 100%;
   justify-content: center;
 }
-.photo-image{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+.swiper-slide {
+    width: auto;
+    margin: 0 auto;
+  }
 }
 
 
@@ -361,14 +367,18 @@ form{
   padding: 10px;
   align-items: flex-start;
 }
-.photo-image{
-  overflow-x: auto;
-  width: 100%;
-}
-.photo-image img{
-  min-width: 200px;
-}
+.swiper-slide {
+    width: auto;
+    margin: 0 auto;
+  }
 .copyright{
   padding:0px 20px;
+}
+}
+
+/*PC用*/
+@media screen and (min-width: 1025px) {
+  .swiper-slide {
+    width: 33.3333%;
 }
 }

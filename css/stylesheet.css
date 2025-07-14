@@ -151,7 +151,7 @@ footer{
 }
 .work-txt p {
   max-width: 100%;
-  line-height: 1.8PX;
+  line-height: 1.8;
 }
 .work-1 .work-txt,
 .work-3 .work-txt,
@@ -162,11 +162,13 @@ footer{
 .work-2 .work-txt,
 .work-4 .work-txt {
   align-items: flex-start;
-  text-align: LEFT;
+  text-align: left;
 }
 .work-txt a{
   display: inline-block;
   margin-top: 20px;
+  width: auto;
+  max-width: 100%;
 }
 .work-img{
   width: 55%;
@@ -175,17 +177,26 @@ footer{
 
 .view-more,
 .back-site{
+  display: inline-block;
+  align-self: center;
+  text-align: center;
   border-radius: 50px;
   padding: 20px 55px;
   font-size: 20px;
   border: 1px solid #4A4846;
   background-color: #fff;
   transition: background-color 0.3s ease, color 0.3s ease;
+  min-width: 200px;
+  box-sizing: border-box;
 }
 .view-more:hover,
 .back-site:hover{
   background-color: #4A4846;
   color: #fff;
+}
+.back-site-wrapper{
+  text-align: center;
+  margin: 50px 0;
 }
 .skill-wrapper,
 .policy-wrapper{
@@ -459,21 +470,27 @@ textarea{
   margin-left: 50px;
   width: 70%;
 }
-.photo-image{
-  padding: 20px 70px;
+.swiper {
+  width: 100%;
+  overflow: hidden;
+}
+.swiper-slide {
+  flex-shrink: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+.swiper-wrapper {
   display: flex;
   justify-content: center;
-  object-fit: cover;
-  border-radius: 10px;
-  gap: 50px;
+  gap: 20px;
 }
-.back-site{
-  display: block;           
-  width: fit-content; 
-  margin: 50px auto; 
-  text-align: center;
+.swiper-slide img {
+  width: 100%;
   height: auto;
+  display: block;
 }
+
+
 /*ワークHTML*/
 .low-title{
   padding: 90px 90px 0 90px;
@@ -521,4 +538,7 @@ hr{
   display: flex;
   flex-direction: column;
   gap: 30px;
+}
+#work-top{
+  margin-top: 90px;
 }
