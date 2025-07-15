@@ -190,10 +190,17 @@ form{
 .swiper-slide {
     margin: 0 auto;
   }
-.swiper-button-prev,
-.swiper-button-next {
-  width: 30px;
-  height: 30px;
+  .swiper-slide img {
+    width: 70%;
+    margin: 0 auto;
+  }
+.photo-slider .swiper-button-prev,
+.photo-slider .swiper-button-next,
+.draw-slider .swiper-button-prev,
+.draw-slider .swiper-button-next {
+  color: #4A4846;
+  width: 20px;
+  height: 20px;
 }
 }
 
@@ -370,6 +377,10 @@ form{
   flex-direction: column;
   padding: 10px;
   align-items: flex-start;
+}
+.hobby-txt {
+  margin-left: 0px;
+  width: 100%;
 }
 .swiper-slide {
     margin: 0 auto;

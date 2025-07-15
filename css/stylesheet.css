@@ -21,6 +21,16 @@ body {
   margin: 0 auto;
   color: #4A4846;
 }
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
 a,button {
   font-weight: 400;
   cursor: pointer;
