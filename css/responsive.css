@@ -188,9 +188,13 @@ form{
   justify-content: center;
 }
 .swiper-slide {
-    width: auto;
     margin: 0 auto;
   }
+.swiper-button-prev,
+.swiper-button-next {
+  width: 30px;
+  height: 30px;
+}
 }
 
 
@@ -368,17 +372,9 @@ form{
   align-items: flex-start;
 }
 .swiper-slide {
-    width: auto;
     margin: 0 auto;
   }
 .copyright{
   padding:0px 20px;
-}
-}
-
-/*PC用*/
-@media screen and (min-width: 1025px) {
-  .swiper-slide {
-    width: 33.3333%;
 }
 }

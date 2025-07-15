@@ -473,23 +473,42 @@ textarea{
 .swiper {
   width: 100%;
   overflow: hidden;
+  position: relative;
+  margin: 20px 0;
 }
 .swiper-slide {
-  flex-shrink: 0;
   width: 100%;
   box-sizing: border-box;
-}
-.swiper-wrapper {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
 }
 .swiper-slide img {
   width: 100%;
   height: auto;
   display: block;
 }
-
+.photo-slider .swiper-button-prev,
+.photo-slider .swiper-button-next,
+.draw-slider .swiper-button-prev,
+.draw-slider .swiper-button-next {
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 20%;
+  top: 50%;
+  z-index: 10;
+  position: absolute;
+}
+.photo-slider .swiper-button-prev,
+.draw-slider .swiper-button-prev {
+  left: 10px;
+}
+.photo-slider .swiper-button-next,
+.draw-slider .swiper-button-next {
+  right: 10px;
+}
+.swiper-pagination-bullet-active {
+  background: #FE9078 !important; 
+  opacity: 1 !important;
+}
 
 /*ワークHTML*/
 .low-title{

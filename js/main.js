@@ -28,17 +28,15 @@
   });
 }
 // Swiperインスタンス格納用
-let photoSlider = null;
 let drawSlider = null;
+let photoSlider = null;
 
 function initSliders(){
-  const isMobile = window.innerWidth <= 1024;
-
   const drawEl = document.querySelector('.draw-slider');
-  if(drawEl){
-    if(isMobile && !drawSlider){
+    if(drawEl && !drawSlider){
       drawSlider = new Swiper('.draw-slider',{
-        slidesPerView: 1.0,
+        slidesPerView: 3,
+        slidesPerGroup: 1,
         spaceBetween:20,
         loop: true,
         autoplay: {
@@ -49,23 +47,19 @@ function initSliders(){
           nextEl: '.draw-slider .swiper-button-next',
           prevEl: '.draw-slider .swiper-button-prev',
         },
-        pagition:{
+        pagination:{
           el: '.draw-slider .swiper-pagination',
           clickable: true,
         },
         speed: 400,
       });
-    } else if (!isMobile && drawSlider) {
-      drawSlider.destroy(true, true);
-      drawSlider = null;
     }
-  }
 
   const photoEl = document.querySelector('.photo-slider');
-  if(photoEl){
-    if(isMobile && !photoSlider){
+    if(photoEl && !photoSlider){
       photoSlider = new Swiper('.photo-slider',{
-        slidesPerView: 1.0,
+        slidesPerView: 3,
+        slidesPerGroup: 1,
         spaceBetween:20,
         loop: true,
         autoplay: {
@@ -82,13 +76,8 @@ function initSliders(){
         },
         speed: 400,
       });
-    } else if (!isMobile && photoSlider) {
-      photoSlider.destroy(true, true);
-      photoSlider = null;
-    }
+    } 
   }
-}
-
 window.addEventListener('load', initSliders);
 window.addEventListener('resize',() => {
   clearTimeout(window.sliderResizeTimer);
