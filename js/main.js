@@ -21,7 +21,7 @@
 
 // トップ画像をロード時に表示
 window.addEventListener('load', () => {
-  document.querySelector('#top-wrapper');
+  const top = document.querySelector('#top-wrapper');
   if (top) {
     top.classList.add('show');
   }
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('show');
-        observer.unobserve(entry.taget);
+        observer.unobserve(entry.target);
       }
     });
   },{threshold: 0.1 });
