@@ -19,7 +19,7 @@
   });
 }
 
-// トップ画像をロード時に表示
+// トップ画像をロード時に表示する
 window.addEventListener('load', () => {
   const top = document.querySelector('#top-wrapper');
   if (top) {
@@ -27,7 +27,7 @@ window.addEventListener('load', () => {
   }
 });
 
-// 他の要素はスクロールで表示
+// 他の要素はスクロールで表示する
 document.addEventListener("DOMContentLoaded", function () {
   const fadeIns = document.querySelectorAll('.fade-in:not(#top-wrapper)');
   const observer = new IntersectionObserver((entries) => {
