@@ -30,6 +30,7 @@ window.addEventListener('load', () => {
 // 他の要素はスクロールで表示する
 document.addEventListener("DOMContentLoaded", function () {
   const fadeIns = document.querySelectorAll('.fade-in:not(#top-wrapper)');
+  if (fadeIns.length === 0) return;
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
