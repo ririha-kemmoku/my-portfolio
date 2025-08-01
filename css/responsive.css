@@ -22,18 +22,33 @@
   padding: 30px 0 15px 0 ;
 }
 .work-item{
-  align-items: center;
+  flex-direction: column;
   padding: 30px;
   gap: 10px;
-}
-.work-txt{
-  width: 100%;
   text-align: center;
-  align-items: center;
 }
-.work-title{
+.work-item.reverse {
+  flex-direction: column;
+}
+.work-img{
+  width: 100%;
+  order: 1;
+}
+.work-1 .work-txt,
+.work-2 .work-txt,
+.work-3 .work-txt,
+.work-4 .work-txt,
+.work-5 .work-txt {
+  width: 100%;
+  order: 2;
+  align-items: center;
+  text-align: center;
+}
+.work-title,
+.low-title,
+.list-title{
   font-weight: 300;
-  font-size: 15px;
+  font-size: 20px;
 }
 .detail{
   font-size: 10px;
@@ -207,6 +222,50 @@ form{
   width: 20px;
   height: 20px;
 }
+/*詳細のHTML*/
+.work-txt{
+  width: 100%;
+}
+.work-title{
+  margin: 0 auto;
+}
+.feature-flex{
+  flex-direction: column;
+  align-items: center;
+}
+.feature-txt{
+  margin-left: 0px;
+  line-height: 1.0;
+  font-size: 15px;
+  max-width: 70%;
+}
+.img-chocolate{
+  width: 50%;
+}
+.img-IT{
+  width: 55%;
+}
+.banner-flex{
+  width: 50%;
+}
+.process-wrapper,
+.point-wrapper{
+  width: 70%;
+  margin: 0 auto;
+}
+.list-txt{
+  width: 100%;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 2;
+}
+.review-txt{
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 2;
+  padding: 50px 80px;
+}
+
 }
 
 

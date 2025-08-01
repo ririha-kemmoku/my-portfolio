@@ -590,6 +590,10 @@ hr{
   flex-direction: column;
   gap: 30px;
 }
+.process-wrapper,
+.point-wrapper{
+  width: 100%;
+}
 #work-top{
   margin-top: 90px;
 }
