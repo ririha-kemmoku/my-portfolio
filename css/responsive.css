@@ -240,7 +240,7 @@ form{
   max-width: 70%;
 }
 .site-preview {
-    max-width: 280px;  /* 画面の7〜8割程度に */
+    max-width: 280px; 
   }
 .img-chocolate{
   width: 50%;
@@ -458,8 +458,12 @@ form{
 .copyright{
   padding:0px 20px;
 }
+/*詳細のHTML*/
 .feature-flex{
   flex-direction: column;
   align-items: center;
+}
+#process{
+  padding: 0 50px;
 }
 }
