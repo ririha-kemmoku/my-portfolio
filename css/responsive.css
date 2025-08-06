@@ -84,10 +84,15 @@
   width: 100px;
   object-fit: contain;
 }
-.skill-txt,
 .point-txt,
 .hobby-txt{
   width: 70%;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 2;
+}
+.skill-txt{
+  width: 100%;
   font-size: 15px;
   font-weight: 400;
   line-height: 2;
